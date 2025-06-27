@@ -18,8 +18,10 @@ class S {
   static S? _current;
 
   static S get current {
-    assert(_current != null,
-        'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.');
+    assert(
+      _current != null,
+      'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.',
+    );
     return _current!;
   }
 
@@ -41,13 +43,55 @@ class S {
 
   static S of(BuildContext context) {
     final instance = S.maybeOf(context);
-    assert(instance != null,
-        'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?');
+    assert(
+      instance != null,
+      'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?',
+    );
     return instance!;
   }
 
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
+  }
+
+  /// `Get anything delivered`
+  String get getAnythingDelivered {
+    return Intl.message(
+      'Get anything delivered',
+      name: 'getAnythingDelivered',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order food, groceries, and more from thousands of stores and restaurants near you.`
+  String get onboardingSubtitle {
+    return Intl.message(
+      'Order food, groceries, and more from thousands of stores and restaurants near you.',
+      name: 'onboardingSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue`
+  String get continueButton {
+    return Intl.message('Continue', name: 'continueButton', desc: '', args: []);
+  }
+
+  /// `Get started`
+  String get getStarted {
+    return Intl.message('Get started', name: 'getStarted', desc: '', args: []);
+  }
+
+  /// `Order from restaurants, groceries, convenience stores, and more.`
+  String get secondSubtitle {
+    return Intl.message(
+      'Order from restaurants, groceries, convenience stores, and more.',
+      name: 'secondSubtitle',
+      desc: '',
+      args: [],
+    );
   }
 }
 
