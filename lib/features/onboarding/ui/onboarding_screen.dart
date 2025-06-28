@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:foodie/core/helpers/extensions.dart';
 import 'package:foodie/core/helpers/spacing.dart';
+import 'package:foodie/core/routing/routes.dart';
 import 'package:foodie/core/theming/colors.dart';
 import 'package:foodie/core/theming/styles.dart';
 import 'package:foodie/features/onboarding/ui/widgets/onboarding_components.dart';
@@ -59,7 +61,9 @@ class OnboardingScreen extends StatelessWidget {
               buttonTextStyle: TextStyles.font16BlackBold,
               buttonText: S.of(context).getStarted,
 
-              onButtonPressed: () {},
+              onButtonPressed: () {
+                context.pushNamed(Routes.signUpScreen);
+              },
               pageIndicator: pageIndicator,
               buttonColor: AppColors.pink,
             ),
