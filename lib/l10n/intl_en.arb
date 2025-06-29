@@ -3,5 +3,10 @@
     "onboardingSubtitle" : "Order food, groceries, and more from thousands of stores and restaurants near you.",
     "continueButton" : "Continue",
     "getStarted" : "Get started",
-    "secondSubtitle" : "Order from restaurants, groceries, convenience stores, and more."
+    "secondSubtitle" : "Order from restaurants, groceries, convenience stores, and more.",
+    "fullName" : "Full name",
+    "phoneNumber" : "Phone number",
+    "email" : "Email",
+    "password" : "Password",
+    "termsAndPrivacyAgreement" : "I agree to the Terms of Service and Privacy Policy"
 }

@@ -93,6 +93,41 @@ class S {
       args: [],
     );
   }
+
+  /// `Full name`
+  String get fullName {
+    return Intl.message('Full name', name: 'fullName', desc: '', args: []);
+  }
+
+  /// `Phone number`
+  String get phoneNumber {
+    return Intl.message(
+      'Phone number',
+      name: 'phoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message('Email', name: 'email', desc: '', args: []);
+  }
+
+  /// `Password`
+  String get password {
+    return Intl.message('Password', name: 'password', desc: '', args: []);
+  }
+
+  /// `I agree to the Terms of Service and Privacy Policy`
+  String get termsAndPrivacyAgreement {
+    return Intl.message(
+      'I agree to the Terms of Service and Privacy Policy',
+      name: 'termsAndPrivacyAgreement',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

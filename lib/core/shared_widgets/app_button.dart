@@ -22,7 +22,9 @@ Widget appButton(
           borderRadius: BorderRadius.circular(borderRadius ?? 30),
         ),
       ),
-      backgroundColor: WidgetStatePropertyAll(backgroundColor ?? AppColors.red),
+      backgroundColor: WidgetStatePropertyAll(
+        backgroundColor ?? AppColors.primaryColor,
+      ),
       padding: WidgetStateProperty.all<EdgeInsets>(
         EdgeInsets.symmetric(
           horizontal: responsiveValue(context, horizontalPadding ?? 12),
@@ -30,7 +32,10 @@ Widget appButton(
         ),
       ),
       fixedSize: WidgetStateProperty.all(
-        Size(responsiveValue(context, buttonWidth ?? double.maxFinite), responsiveValue(context, buttonHeight ?? 48)),
+        Size(
+          responsiveValue(context, buttonWidth ?? double.maxFinite),
+          responsiveValue(context, buttonHeight ?? 48),
+        ),
       ),
     ),
     onPressed: onPressed,
