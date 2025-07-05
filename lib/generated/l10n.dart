@@ -128,6 +128,71 @@ class S {
       args: [],
     );
   }
+
+  /// `Sign up`
+  String get signUp {
+    return Intl.message('Sign up', name: 'signUp', desc: '', args: []);
+  }
+
+  /// `Create account`
+  String get createAccount {
+    return Intl.message(
+      'Create account',
+      name: 'createAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your full name`
+  String get enterYourName {
+    return Intl.message(
+      'Please enter your full name',
+      name: 'enterYourName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your phone number`
+  String get enterYourPhoneNumber {
+    return Intl.message(
+      'Please enter your phone number',
+      name: 'enterYourPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your email`
+  String get enterYourEmail {
+    return Intl.message(
+      'Please enter your email',
+      name: 'enterYourEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You should create password`
+  String get createYourPassword {
+    return Intl.message(
+      'You should create password',
+      name: 'createYourPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You should agree on our terms and privacy conditions`
+  String get youShouldAgreeOnTerms {
+    return Intl.message(
+      'You should agree on our terms and privacy conditions',
+      name: 'youShouldAgreeOnTerms',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

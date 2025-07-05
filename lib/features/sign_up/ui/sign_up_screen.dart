@@ -1,7 +1,8 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:foodie/core/helpers/spacing.dart';
 import 'package:foodie/core/shared_widgets/app_button.dart';
-import 'package:foodie/core/theming/colors.dart';
 import 'package:foodie/core/theming/styles.dart';
 import 'package:foodie/features/sign_up/ui/widgets/sign_up_form.dart';
 import 'package:foodie/generated/l10n.dart';
@@ -25,7 +26,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sign up', style: TextStyles.font18BlackBold),
+        title: Text(S.of(context).signUp, style: TextStyles.font18BlackBold),
         centerTitle: true,
       ),
       body: Padding(
@@ -41,7 +42,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               SizedBox(
                 width: double.infinity,
                 child: Text(
-                  'Create account',
+                  S.of(context).createAccount,
                   style: TextStyles.font28BlackBold,
                   textAlign: TextAlign.center,
                 ),
@@ -62,37 +63,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 },
               ),
               verticalSpace(context, 28),
-              SizedBox(
-                height: responsiveValue(context, 56),
-                child: Row(
-                  children: [
-                    Checkbox(
-                      value: agreeOnPrivacyTerms,
-                      onChanged: (value) {
-                        setState(() {
-                          agreeOnPrivacyTerms = !agreeOnPrivacyTerms;
-                        });
-                      },
-                      side: BorderSide(color: AppColors.darkerColorOfPrimary),
-                      activeColor: Colors.transparent,
-                      checkColor: AppColors.black,
-                    ),
-                    Expanded(
-                      child: Text(
-                        S.of(context).termsAndPrivacyAgreement,
-                        style: TextStyles.font16BlackRegular,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              verticalSpace(context, 25),
               appButton(
                 context,
-                onPressed: () {},
-                buttonText: 'Sign up',
+                onPressed: () {
+                  validateThenSignUp();
+                },
+                buttonText: S.of(context).signUp,
                 textStyle: TextStyles.font16BlackBold,
               ),
             ],
@@ -100,5 +76,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
         ),
       ),
     );
+  }
+
+  void validateThenSignUp() {
+    if (signUpFormKey.currentState!.validate()) {
+      log('Sign up this user');
+    }
   }
 }

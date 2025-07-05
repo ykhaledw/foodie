@@ -23,7 +23,20 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "continueButton": MessageLookupByLibrary.simpleMessage("إستمرار"),
+    "createAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
+    "createYourPassword": MessageLookupByLibrary.simpleMessage(
+      "برجاء إنشاء كلمة سر خاصة بك",
+    ),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+    "enterYourEmail": MessageLookupByLibrary.simpleMessage(
+      "برجاء إدخال البريد الإالكتروني",
+    ),
+    "enterYourName": MessageLookupByLibrary.simpleMessage(
+      "برجاء إدخال الإسم بالكامل",
+    ),
+    "enterYourPhoneNumber": MessageLookupByLibrary.simpleMessage(
+      "برجاء إدخال رقم الهاتف",
+    ),
     "fullName": MessageLookupByLibrary.simpleMessage("الإسم"),
     "getAnythingDelivered": MessageLookupByLibrary.simpleMessage(
       "احصل على أي شئ يتم تسليمه",
@@ -37,8 +50,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "secondSubtitle": MessageLookupByLibrary.simpleMessage(
       "اطلب من المطاعم ومحلات البقالة والمتاجر الصغيرة والمزيد.",
     ),
+    "signUp": MessageLookupByLibrary.simpleMessage("تسجيل"),
     "termsAndPrivacyAgreement": MessageLookupByLibrary.simpleMessage(
       "أوافق على شروط الخدمة وسياسة الخصوصية",
+    ),
+    "youShouldAgreeOnTerms": MessageLookupByLibrary.simpleMessage(
+      "يجب الموافقة على التعليمات و شروط الخصوصية",
     ),
   };
 }

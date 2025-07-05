@@ -8,5 +8,12 @@
     "phoneNumber" : "Phone number",
     "email" : "Email",
     "password" : "Password",
-    "termsAndPrivacyAgreement" : "I agree to the Terms of Service and Privacy Policy"
+    "termsAndPrivacyAgreement" : "I agree to the Terms of Service and Privacy Policy",
+    "signUp" : "Sign up",
+    "createAccount" : "Create account",
+    "enterYourName" : "Please enter your full name",
+    "enterYourPhoneNumber" : "Please enter your phone number",
+    "enterYourEmail" : "Please enter your email",
+    "createYourPassword" : "You should create password",
+    "youShouldAgreeOnTerms" : "You should agree on our terms and privacy conditions"
 }

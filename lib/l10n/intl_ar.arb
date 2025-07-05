@@ -8,5 +8,12 @@
     "phoneNumber" : "الهاتف",
     "email" : "البريد الإلكتروني",
     "password" : "كلمة السر",
-    "termsAndPrivacyAgreement" : "أوافق على شروط الخدمة وسياسة الخصوصية"
+    "termsAndPrivacyAgreement" : "أوافق على شروط الخدمة وسياسة الخصوصية",
+    "signUp" : "تسجيل",
+    "createAccount" : "إنشاء حساب",
+    "enterYourName" : "برجاء إدخال الإسم بالكامل",
+    "enterYourPhoneNumber" : "برجاء إدخال رقم الهاتف",
+    "enterYourEmail" : "برجاء إدخال البريد الإالكتروني",
+    "createYourPassword" : "برجاء إنشاء كلمة سر خاصة بك",
+    "youShouldAgreeOnTerms" : "يجب الموافقة على التعليمات و شروط الخصوصية"
 }
