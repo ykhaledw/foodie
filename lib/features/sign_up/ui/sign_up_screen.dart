@@ -1,9 +1,13 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:foodie/core/helpers/spacing.dart';
 import 'package:foodie/core/shared_widgets/app_button.dart';
 import 'package:foodie/core/theming/styles.dart';
+import 'package:foodie/features/sign_up/data/models/sign_up_request.dart';
+import 'package:foodie/features/sign_up/logic/cubit/sign_up_cubit.dart';
+import 'package:foodie/features/sign_up/ui/widgets/sign_up_bloc_listener.dart';
 import 'package:foodie/features/sign_up/ui/widgets/sign_up_form.dart';
 import 'package:foodie/generated/l10n.dart';
 
@@ -71,6 +75,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 buttonText: S.of(context).signUp,
                 textStyle: TextStyles.font16BlackBold,
               ),
+              SignUpBlocListener(),
             ],
           ),
         ),
@@ -80,7 +85,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   void validateThenSignUp() {
     if (signUpFormKey.currentState!.validate()) {
-      log('Sign up this user');
+      log('Going to create new user');
+      context.read<SignUpCubit>().signUp(
+        SignUpRequest(
+          email: emailController.text,
+          password: passwordController.text,
+        ),
+      );
     }
   }
 }
