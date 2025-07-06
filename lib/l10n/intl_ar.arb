@@ -15,5 +15,8 @@
     "enterYourPhoneNumber" : "برجاء إدخال رقم الهاتف",
     "enterYourEmail" : "برجاء إدخال البريد الإالكتروني",
     "createYourPassword" : "برجاء إنشاء كلمة سر خاصة بك",
-    "youShouldAgreeOnTerms" : "يجب الموافقة على التعليمات و شروط الخصوصية"
+    "youShouldAgreeOnTerms" : "يجب الموافقة على التعليمات و شروط الخصوصية",
+    "alreadyHaveAccount" : "هل لديك حساب بالفعل؟",
+    "login" : "تسجيل دخول",
+    "gotIt" : "تم"
 }

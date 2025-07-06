@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:foodie/core/helpers/spacing.dart';
@@ -75,6 +76,26 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 buttonText: S.of(context).signUp,
                 textStyle: TextStyles.font16BlackBold,
               ),
+              verticalSpace(context, 16),
+              Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                      text: S.of(context).alreadyHaveAccount,
+                      style: TextStyles.font14BrownRegular,
+                    ),
+                    TextSpan(
+                      text: ' ${S.of(context).login}',
+                      style: TextStyles.font14BrownRegular,
+                      recognizer:
+                          TapGestureRecognizer()
+                            ..onTap = () {
+                              log('Navigate to login screen');
+                            },
+                    ),
+                  ],
+                ),
+              ),
               SignUpBlocListener(),
             ],
           ),
@@ -90,6 +111,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
         SignUpRequest(
           email: emailController.text,
           password: passwordController.text,
+          name: nameController.text,
+          phone: phoneController.text,
         ),
       );
     }

@@ -15,5 +15,8 @@
     "enterYourPhoneNumber" : "Please enter your phone number",
     "enterYourEmail" : "Please enter your email",
     "createYourPassword" : "You should create password",
-    "youShouldAgreeOnTerms" : "You should agree on our terms and privacy conditions"
+    "youShouldAgreeOnTerms" : "You should agree on our terms and privacy conditions",
+    "alreadyHaveAccount" : "Already have an account?",
+    "login" : "Login",
+    "gotIt" : "Got it"
 }

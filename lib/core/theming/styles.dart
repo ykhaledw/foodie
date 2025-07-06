@@ -32,4 +32,10 @@ class TextStyles {
     color: AppColors.black,
     fontWeight: FontWeightHelper.bold,
   );
+
+  static TextStyle font14BrownRegular = TextStyle(
+    fontSize: 14,
+    color: AppColors.brown,
+    fontWeight: FontWeightHelper.regular,
+  );
 }
