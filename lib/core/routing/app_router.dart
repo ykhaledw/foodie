@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:foodie/core/routing/routes.dart';
+import 'package:foodie/features/login/ui/login_screen.dart';
 import 'package:foodie/features/onboarding/ui/onboarding_screen.dart';
 import 'package:foodie/features/sign_up/data/repo/sign_up_repo.dart';
 
@@ -20,6 +21,12 @@ class AppRouter {
                 create: (context) => SignUpCubit(SignUpRepo()),
                 child: const SignUpScreen(),
               ),
+        );
+
+      case Routes.loginScreen:
+        return MaterialPageRoute(
+          builder:
+              (_) => const LoginScreen(),
         );
 
       default:
