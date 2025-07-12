@@ -30,6 +30,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "createYourPassword": MessageLookupByLibrary.simpleMessage(
       "You should create password",
     ),
+    "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
+      "Don\'t have an account?",
+    ),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "enterYourEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter your email",
@@ -40,6 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterYourPhoneNumber": MessageLookupByLibrary.simpleMessage(
       "Please enter your phone number",
     ),
+    "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full name"),
     "getAnythingDelivered": MessageLookupByLibrary.simpleMessage(
       "Get anything delivered",
@@ -59,6 +63,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "termsAndPrivacyAgreement": MessageLookupByLibrary.simpleMessage(
       "I agree to the Terms of Service and Privacy Policy",
     ),
+    "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome back!"),
     "youShouldAgreeOnTerms": MessageLookupByLibrary.simpleMessage(
       "You should agree on our terms and privacy conditions",
     ),

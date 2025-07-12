@@ -18,5 +18,8 @@
     "youShouldAgreeOnTerms" : "يجب الموافقة على التعليمات و شروط الخصوصية",
     "alreadyHaveAccount" : "هل لديك حساب بالفعل؟",
     "login" : "تسجيل دخول",
-    "gotIt" : "تم"
+    "gotIt" : "تم",
+    "welcomeBack" : "مرحبا بك مجددا",
+    "forgotPassword" : "هل نسيت كلمة السر؟",
+    "dontHaveAnAccount" : "ليس لديك حساب؟"
 }
