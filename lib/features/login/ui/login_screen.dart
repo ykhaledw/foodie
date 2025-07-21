@@ -1,10 +1,14 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:foodie/core/shared_widgets/app_button.dart';
 import 'package:foodie/core/theming/styles.dart';
+import 'package:foodie/features/login/data/models/login_request_model.dart';
+import 'package:foodie/features/login/logic/cubit/login_cubit.dart';
 import 'package:foodie/features/login/ui/widgets/dont_have_an_account_text.dart';
 import 'package:foodie/features/login/ui/widgets/forgot_password.dart';
+import 'package:foodie/features/login/ui/widgets/login_bloc_listener.dart';
 import 'package:foodie/features/login/ui/widgets/login_form.dart';
 import 'package:foodie/generated/l10n.dart';
 
@@ -74,6 +78,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             verticalSpace(context, 16),
             dontHaveAnAccountText(context),
+            LoginBlocListener(),
           ],
         ),
       ),
@@ -83,6 +88,12 @@ class _LoginScreenState extends State<LoginScreen> {
   void validateThenLogin() {
     if (loginFormKey.currentState!.validate()) {
       log('send login request');
+      context.read<LoginCubit>().login(
+        LoginRequestModel(
+          email: emailController.text,
+          password: passwordController.text,
+        ),
+      );
     }
   }
 }
