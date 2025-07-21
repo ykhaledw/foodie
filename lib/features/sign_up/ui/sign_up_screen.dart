@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:foodie/core/helpers/extensions.dart';
 import 'package:foodie/core/helpers/spacing.dart';
 import 'package:foodie/core/shared_widgets/app_button.dart';
 import 'package:foodie/core/theming/styles.dart';
@@ -11,6 +12,8 @@ import 'package:foodie/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:foodie/features/sign_up/ui/widgets/sign_up_bloc_listener.dart';
 import 'package:foodie/features/sign_up/ui/widgets/sign_up_form.dart';
 import 'package:foodie/generated/l10n.dart';
+
+import '../../../core/routing/routes.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -90,7 +93,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       recognizer:
                           TapGestureRecognizer()
                             ..onTap = () {
-                              log('Navigate to login screen');
+                              context.pushNamed(Routes.loginScreen);
                             },
                     ),
                   ],

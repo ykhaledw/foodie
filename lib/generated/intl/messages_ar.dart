@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "createYourPassword": MessageLookupByLibrary.simpleMessage(
       "برجاء إنشاء كلمة سر خاصة بك",
     ),
+    "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "enterYourEmail": MessageLookupByLibrary.simpleMessage(
       "برجاء إدخال البريد الإالكتروني",
@@ -39,6 +40,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "enterYourPhoneNumber": MessageLookupByLibrary.simpleMessage(
       "برجاء إدخال رقم الهاتف",
+    ),
+    "forgotPassword": MessageLookupByLibrary.simpleMessage(
+      "هل نسيت كلمة السر؟",
     ),
     "fullName": MessageLookupByLibrary.simpleMessage("الإسم"),
     "getAnythingDelivered": MessageLookupByLibrary.simpleMessage(
@@ -59,6 +63,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "termsAndPrivacyAgreement": MessageLookupByLibrary.simpleMessage(
       "أوافق على شروط الخدمة وسياسة الخصوصية",
     ),
+    "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحبا بك مجددا"),
     "youShouldAgreeOnTerms": MessageLookupByLibrary.simpleMessage(
       "يجب الموافقة على التعليمات و شروط الخصوصية",
     ),
